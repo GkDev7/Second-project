@@ -11,7 +11,7 @@ router.post("/insert",std.insertStd)
 router.post("/delete",std.deleteStd)
 
 
-
+router.post("/update", std.updateStd)
 
 
 

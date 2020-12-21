@@ -29,7 +29,6 @@ deleteStd=(req,res,next)=>{
 }
 
 
-
 module.exports={
     insertStd,
     deleteStd
