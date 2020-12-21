@@ -8,7 +8,7 @@ const std=require("../controllers/stdController")
 router.post("/insert",std.insertStd)
 
 
-
+router.post("/delete",std.deleteStd)
 
 
 

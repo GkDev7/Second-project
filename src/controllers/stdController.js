@@ -20,8 +20,17 @@ insertStd=(req,res,next)=>{
     })
 }
 
+deleteStd=(req,res,next)=>{
+    const stdRec=req.body
+
+    dbConn.collection("stdcollection").deleteOne(stdRec,(err,rec)=>{
+        res.json({data:[rec],message:"successfully deleted",success:true})
+    })
+}
+
 
 
 module.exports={
-    insertStd
+    insertStd,
+    deleteStd
 }
