@@ -11,6 +11,7 @@ mongodb.connect(dbUrl,(err,serverConnn)=>{
     console.log("database")
 })
 
+new feature is going to be added
 
 insertStd=(req,res,next)=>{
     const stdRec=req.body
